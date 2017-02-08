@@ -1,1 +1,87 @@
-hmm
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>James Kettle Research</title>
+<style>
+
+body {
+	background-color: #e6e6e6;
+	padding-left: 5%;
+}
+
+.box {
+	border: 1px solid black;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+#attack {
+	display: inline-block;
+}
+
+#automate {
+	position: absolute;
+	display: inline-block;
+	margin-left: 40px;
+}
+
+li {
+	margin: 5px 0 3px 0;
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+<div id="intro">
+<h1>James Kettle research overview</h1>
+
+<br/>
+<div id="attack">
+<b>Attack Technique Research</b>
+<ul>
+    <li><a href="http://blog.portswigger.net/2016/10/exploiting-cors-misconfigurations-for.html">Exploiting CORS Misconfigurations for Bitcoins and Bounties</a>  (<a href="https://www.youtube.com/watch?v=22CKQ_xed9s">AppSec USA 2016 recording</a>)</li>
+    <li><a href="http://blog.portswigger.net/2015/08/server-side-template-injection.html">Server-Side Template Injection</a> (<a href="https://www.youtube.com/watch?v=3cT0uE7Y87s">BlackHat USA 2015 recording</a>, <a href="https://portswigger.net/knowledgebase/papers/ServerSideTemplateInjection.pdf">whitepaper</a>)</li>
+    <li><a href="http://contextis.co.uk/blog/comma-separated-vulnerabilities/">CSV Formula Injection</a></li>
+    <li><a href="http://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html">Practical HTTP Host header attacks</a></li>
+</ul>
+</div>
+
+<div id="automate">
+<b>Automation Research</b>
+<ul>
+	<li><a href="http://blog.portswigger.net/2016/11/backslash-powered-scanning-hunting.html">Backslash Powered Scanner: Hunting Unknown Vulnerability Classes</a> (Recording pending)</li>
+    <li><a href="http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerabilities.html">Hunting Asynchronous Vulnerabilities</a> (<a href="https://www.youtube.com/watch?v=ha6LD1-RiJU">recording</a>) Originally presented at 44Con. </li>
+    <li><a href="https://www.youtube.com/watch?v=dxo6-niEtyE">ActiveScan++</a> (From AppSec USA 2014)</li>
+</ul>
+</div>
+<br/><br/>
+<div id="misc">
+<b>Misc</b>
+<ul>
+    <li>2017-01-18 - <a href="https://hackerone.com/blog/Chat-With-Burp-Suite-About-Their-Bug-Bounty-Story">Interview with HackerOne about PortSwigger's bug bounty</a></li>
+	<li>2016-05-31 - <a href="http://blog.portswigger.net/2016/05/web-storage-lesser-evil-for-session.html">Web Storage: the lesser evil for session tokens</a></li>
+    <li>2016-04-25 - <a href="http://blog.portswigger.net/2016/04/adapting-angularjs-payloads-to-exploit.html">Adapting AngularJS Payloads to Exploit Real World Applications</a> (With Gareth Heyes)</li>
+    <li>2015-02-17 - <a href="http://blog.portswigger.net/2015/02/prssi.html">Detecting and exploiting path-relative stylesheet import (PRSSI) vulnerabilities</a> (aka RPO)</li>
+    <li>2012-06-02 - <a href="http://www.skeletonscribe.net/2012/06/x-frame-options-sameorigin-warning.html">X-Frame-Options Gotcha</a></li>
+    <li>2011-12-20 - <a href="http://www.skeletonscribe.net/2011/12/phrack-ebook.html">Phrack ebook</a></li>
+    <li>2011-03-25 - <a href="http://hackxor.sourceforge.net">hackxor</a> web application hacking game</li>
+</ul>
+</div>
+<h2>Bio</h2>
+<p>
+I'm Head of Research at PortSwigger Web Security, where I design and refine vulnerability detection techniques for Burp Suite's scanner. Recent work has focused on techniques to automate detecting unknown classes of vulnerabilities, and exploiting subtle CORS misconfigurations in bitcoin exchanges. I have extensive experience vulnerability bounty hunting and cultivating novel attack techniques, including server and client side RCE, and abusing the HTTP Host header to poison password reset emails and server side caches. 
+</p>
+You can contact me via <a href="https://twitter.com/albinowax">@albinowax</a> on Twitter, 
+<span onmouseover="e=document.getElementById('flip');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip" dir="rtl">xawonibla</bdo>@gmail.com</span>, or
+<span onmouseover="e=document.getElementById('flip');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip" dir="rtl">elttek.semaj</bdo>@portswigger.net</span><br/>
+</div>
+<p>
+See also <a href="http://skeletonscribe.net/">Personal blog</a>, <a href="http://blog.portswigger.net">Company blog</a>, <a href="https://hackerone.com/albinowax">HackerOne profile</a>
+</p>
+</body>
+</html>
