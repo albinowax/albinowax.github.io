@@ -64,6 +64,22 @@ a:active {
 	width: 90%;
 }
 
+.off {
+   display:none;
+}
+.on {
+   display:block;
+}
+#bio div {
+  display:none;
+}
+#bio:target div, #bio:target .off {
+  display:block;
+}
+#bio:target .on {
+  display:none;
+}
+
 li {
 	margin: 5px 0 3px 0;
 }
@@ -128,9 +144,19 @@ li {
     <li>2011-03-25 - <a href="http://hackxor.sourceforge.net">hackxor</a> web application hacking game</li>
 </ul>
 </div>
-<h3>Bio for conference hype</h3>
+<h3>whoami</h3>
 <p>
+I'm the Head of Research at <a href="https://portswigger.net">PortSwigger Web Security</a>, where I design and refine vulnerability detection techniques for <a href="https://portswigger.net/A.ashx?a=3317C1C686432D16">Burp Suite's</a> scanner, and research novel attack techniques. 
+<div id="bio">
+<a href="#bio" class="on">Show/Hide full bio</a>
+<a href="#" class="off">Show/Hide full bio</a>
+<div>
+<br/>
 James Kettle is Head of Research at <a href="https://portswigger.net">PortSwigger Web Security</a>, where he designs and refines vulnerability detection techniques for <a href="https://portswigger.net/A.ashx?a=3317C1C686432D16">Burp Suite's</a> scanner. Recent work has focused on techniques to detect unknown classes of vulnerabilities, and exploiting subtle CORS misconfigurations in bitcoin exchanges. James has extensive experience cultivating novel attack techniques, including server-side RCE via Template Injection, client-side RCE via malicious formulas in CSV exports, and abusing the HTTP Host header to poison password reset emails and server-side caches. He has spoken at numerous prestigious venues including both BlackHat USA and EU, and OWASP AppSec USA and EU.
+</div>
+</div>
+
+
 </p>
 You can contact me via <a href="https://twitter.com/albinowax">@albinowax</a> on Twitter, <span style="color: red" onmouseover="e=document.getElementById('flip3');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip3" dir="rtl">xawonibla</bdo>@gmail.com</span> or
 <span style="color: red" onmouseover="e=document.getElementById('flip4');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip4" dir="rtl">elttek.semaj</bdo>@portswigger.net</span><br/>
