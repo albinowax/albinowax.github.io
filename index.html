@@ -15,67 +15,81 @@ body {
 	font-weight: 150;
 }
 
-/* unvisited link */
+div {
+		display: inline-block;
+		vertical-align: top;
+}
+
 a:link {
     color: #00c0ff;
 }
 
-/* visited link */
 a:visited {
     color: #0091b5;
 }
 
-/* mouse over link */
 a:hover {
     color: white;
 }
 
-/* selected link */
 a:active {
     color: blue;
 }
 
 .box {
 	border: 2px solid white;
+	margin-top: 10px;
 	padding: 3px 15px 15px 15px;
 	border-radius: 10px;
 	background-color: #1b1b1b;
 }
 
 #contact {
-	position: absolute;
-	display: inline-block;
-	right: 20%;
+	float: right;
+}
+
+.contactlist {
+	list-style: none;
+	margin: 5px 0 3px 0;
+}
+
+.avatar {
+	width: 100px;
+	//position: absolute;
+	float: right;
+	#left: -110px;
 }
 
 #attack {
-	display: inline-block;
+	width: 45%;
 }
 
 #automate {
-	position: absolute;
-	display: inline-block;
-	margin-left: 40px;
+	float: right;
+	width: 45%;
 }
 
 #misc {
-	display: inline-block;
-	margin-top: 60px;
-	width: 90%;
+	margin-top: 40px;
+	width: 100%;
 }
 
 .off {
    display:none;
 }
+
 .on {
    display:block;
 }
+
 #bio div {
   display:none;
 }
+
 #bio:target div, #bio:target .off {
   display:block;
 }
+
 #bio:target .on {
   display:none;
 }
@@ -94,12 +108,21 @@ li {
 <div id="intro">
 <h2>James Kettle / albinowax research overview</h2>
 </div>
-<div id="contact" class="box">
-<img width="20px" src='twitter-128.png'/><a href="https://twitter.com/albinowax">@albinowax</a><br/>
-<span style="color: #00c0ff;" onmouseover="e=document.getElementById('flip1');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip1" dir="rtl">xawonibla</bdo>@gmail.com</span><br/>
-<span style="color: #00c0ff;" onmouseover="e=document.getElementById('flip2');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip2" dir="rtl">elttek.semaj</bdo>@portswigger.net</span><br/>
-<a href="http://www.skeletonscribe.net/">blog.skeletonscribe.net</a><br/>
-<a href="http://blog.portswigger.net/">blog.portswigger.net</a><br/>
+<div id="contact">
+<div class="box">
+<!--<img class="avatar" src='avatar.png'/>-->
+Contact
+<ul class="contactlist">
+<li><img width="20px" src='twitter-128.png'/><a href="https://twitter.com/albinowax">@albinowax</a></li>
+<li><span style="color: #00c0ff;" onmouseover="e=document.getElementById('flip1');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip1" dir="rtl">xawonibla</bdo>@gmail.com</span></li>
+<li><span style="color: #00c0ff;" onmouseover="e=document.getElementById('flip2');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip2" dir="rtl">elttek.semaj</bdo>@portswigger.net</span></li>
+</ul>
+Blogs
+<ul class="contactlist">
+<li><a href="http://www.skeletonscribe.net/">blog.skeletonscribe.net</a><br/></li>
+<li><a href="http://blog.portswigger.net/">blog.portswigger.net</a><br/></li>
+</ul>
+</div>
 </div>
 <br/>
 <div >
@@ -125,7 +148,7 @@ li {
 <div id="automate" class="box">
 <h3>Automation Research</h3>
 <ul>
-	<li><a href="http://blog.portswigger.net/2016/11/backslash-powered-scanning-hunting.html">Backslash Powered Scanner: Hunting Unknown Vulnerability Classes</a> BlackHat Europe 2016 (Recording pending)</li>
+	<li><a href="http://blog.portswigger.net/2016/11/backslash-powered-scanning-hunting.html">Backslash Powered Scanner: Hunting Unknown Vulnerability Classes</a> BlackHat Europe 2016</li>
     <li><a href="http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerabilities.html">Hunting Asynchronous Vulnerabilities</a> (<a href="https://www.youtube.com/watch?v=ha6LD1-RiJU">recording</a>) 44Con 2015. </li>
     <li><a href="https://www.youtube.com/watch?v=dxo6-niEtyE">ActiveScan++</a> AppSec EU 2014</li>
 </ul>
@@ -146,7 +169,7 @@ li {
 </div>
 <h3>whoami</h3>
 <p>
-I'm the Head of Research at <a href="https://portswigger.net">PortSwigger Web Security</a>, where I design and refine vulnerability detection techniques for <a href="https://portswigger.net/A.ashx?a=3317C1C686432D16">Burp Suite's</a> scanner, and research novel attack techniques. 
+I'm the Head of Research at <a href="https://portswigger.net">PortSwigger Web Security</a>, where I design and refine vulnerability detection techniques for <a href="https://portswigger.net/A.ashx?a=3317C1C686432D16">Burp Suite's</a> scanner, and research novel attack techniques.
 <div id="bio">
 <a href="#bio" class="on">Show/Hide full bio</a>
 <a href="#nobio" class="off">Show/Hide full bio</a>
