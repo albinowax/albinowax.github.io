@@ -61,17 +61,22 @@ a:active {
 }
 
 #attack {
-	width: 45%;
+	width: 50%;
+    margin-right: 20px;
 }
 
 #automate {
 	float: right;
-	width: 45%;
+	width: 50%;
 }
 
 #misc {
 	margin-top: 40px;
 	width: 100%;
+}
+
+#middle {
+    display: inline-flex;
 }
 
 .off {
@@ -119,7 +124,7 @@ Contact
 </ul>
 Blogs
 <ul class="contactlist">
-<li><a href="http://www.skeletonscribe.net/">blog.skeletonscribe.net</a><br/></li>
+<li><a href="http://www.skeletonscribe.net/">www.skeletonscribe.net</a><br/></li>
 <li><a href="http://blog.portswigger.net/">blog.portswigger.net</a><br/></li>
 </ul>
 </div>
@@ -128,29 +133,32 @@ Blogs
 <div >
 <h3>Upcoming Presentations</h3>
 <ul>
-    <li>26th July 2017, BlackHat USA, Las Vegas <a href="https://www.blackhat.com/us-17/briefings.html#james-kettle">Cracking the Lens: Targeting HTTP's Hidden Attack-Surface</a></li>
+    <li>17th August 2017, BSides Manchester <a href="https://www.blackhat.com/us-17/briefings.html#james-kettle">Cracking the Lens: Targeting HTTP's Hidden Attack-Surface</a></li>
 </ul>
 
 </div>
 <br/>
-<div id="attack" class="box">
-<h3>Attack Technique Research</h3>
-<ul>
-    <li><a href="http://blog.portswigger.net/2016/10/exploiting-cors-misconfigurations-for.html">Exploiting CORS Misconfigurations for Bitcoins and Bounties</a>  (<a href="https://www.youtube.com/watch?v=wgkj4ZgxI4c&list=PLpr-xdpM8wG8RHOguwOZhUHkKiDeWpvFp&index=31">AppSec EU 2017 recording</a>)</li>
-    <li><a href="http://blog.portswigger.net/2015/08/server-side-template-injection.html">Server-Side Template Injection</a> (<a href="https://www.youtube.com/watch?v=3cT0uE7Y87s">BlackHat USA 2015 recording</a>, <a href="https://portswigger.net/knowledgebase/papers/ServerSideTemplateInjection.pdf">whitepaper</a>)</li>
-    <li><a href="http://contextis.co.uk/blog/comma-separated-vulnerabilities/">CSV Formula Injection</a></li>
-    <li><a href="http://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html">Practical HTTP Host header attacks</a></li>
-</ul>
-</div>
+<div id="middle">
+    <div id="attack" class="box">
+    <h3>Attack Technique Research</h3>
+    <ul>
+        <li><a href="http://blog.portswigger.net/2017/07/cracking-lens-targeting-https-hidden.html">Cracking the Lens: Targeting HTTP's Hidden Attack-Surface</a> (BlackHat USA 2017) </li>
+        <li><a href="http://blog.portswigger.net/2016/10/exploiting-cors-misconfigurations-for.html">Exploiting CORS Misconfigurations for Bitcoins and Bounties</a>  (<a href="https://www.youtube.com/watch?v=wgkj4ZgxI4c&list=PLpr-xdpM8wG8RHOguwOZhUHkKiDeWpvFp&index=31">AppSec EU 2017 recording</a>)</li>
+        <li><a href="http://blog.portswigger.net/2015/08/server-side-template-injection.html">Server-Side Template Injection</a> (<a href="https://www.youtube.com/watch?v=3cT0uE7Y87s">BlackHat USA 2015 recording</a>, <a href="https://portswigger.net/knowledgebase/papers/ServerSideTemplateInjection.pdf">whitepaper</a>)</li>
+        <li><a href="http://contextis.co.uk/blog/comma-separated-vulnerabilities/">CSV Formula Injection</a></li>
+        <li><a href="http://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html">Practical HTTP Host header attacks</a></li>
+    </ul>
+    </div>
 
-<div id="automate" class="box">
-<h3>Automation Research</h3>
-<ul>
-	<li><a href="http://blog.portswigger.net/2016/11/backslash-powered-scanning-hunting.html">Backslash Powered Scanner: Hunting Unknown Vulnerability Classes</a> (<a href="https://www.youtube.com/watch?v=EPmjl7q1-n4&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=3">recording</a>) BlackHat Europe 2016/PHDays 7/NorthSec</li>
-    <li><a href="http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerabilities.html">Hunting Asynchronous Vulnerabilities</a> (<a href="https://www.youtube.com/watch?v=ha6LD1-RiJU">recording</a>) 44Con 2015</li>
-    <li><a href="https://github.com/albinowax/ActiveScanPlusPlus">ActiveScan++</a> (<a href="https://www.youtube.com/watch?v=dxo6-niEtyE">AppSec EU 2014 recording</a>)</li>
-</ul>
-<br/>
+    <div id="automate" class="box">
+    <h3>Automation Research</h3>
+    <ul>
+    	<li><a href="http://blog.portswigger.net/2016/11/backslash-powered-scanning-hunting.html">Backslash Powered Scanner: Hunting Unknown Vulnerability Classes</a> (<a href="https://www.youtube.com/watch?v=EPmjl7q1-n4&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=3">recording</a>) BlackHat Europe 2016/PHDays 7/NorthSec</li>
+        <li><a href="http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerabilities.html">Hunting Asynchronous Vulnerabilities</a> (<a href="https://www.youtube.com/watch?v=ha6LD1-RiJU">recording</a>) 44Con 2015</li>
+        <li><a href="https://github.com/albinowax/ActiveScanPlusPlus">ActiveScan++</a> (<a href="https://www.youtube.com/watch?v=dxo6-niEtyE">AppSec EU 2014 recording</a>)</li>
+    </ul>
+    <br/>
+    </div>
 </div>
 <br/><br/>
 <div id="misc" class="box">
