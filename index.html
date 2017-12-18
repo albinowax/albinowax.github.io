@@ -100,6 +100,18 @@ a:active {
   display:none;
 }
 
+#talks div {
+  display:none;
+}
+
+#talks:target div, #talks:target .off {
+  display:block;
+}
+
+#talks:target .on {
+  display:none;
+}
+
 li {
 	margin: 5px 0 3px 0;
 }
@@ -134,9 +146,25 @@ Blogs
 <div >
 <h3>Upcoming Presentations</h3>
 <ul>
-    None right now
+    None right now! 
 </ul>
-
+<div id="talks">
+<a href="#talks" class="on">Show/Hide past presentations</a>
+<a href="#notalks" class="off">Show/Hide past presentations</a>
+<div id="notalks">
+	<h3>Past presentations</h3>
+	<ul>
+		<li>BlackHat USA 2017 - Cracking the Lens: Targeting HTTP's Hidden Attack-Surface</li>
+		<li>PHDays 7 - Backslash Powered Scanner: Automating Human Intuition</li>
+		<li>NorthSec 2017 - Backslash Powered Scanner: Automating Human Intuition</li>
+		<li>AppSec EU 2017 - Exploiting CORS Misconfigurations for Bitcoins and Bounties</li>
+		<li>AppSec USA 2016 - Exploiting CORS Misconfigurations for Bitcoins and Bounties</li>
+		<li>BlackHat EU 2016 - Backslash Powered Scanner: Hunting Unknown Vulnerabilities</li>
+		<li>44Con 2015 - Hunting Asynchronous Vulnerabilities</li>
+		<li>BlackHat USA 2015 - Server-Side Template Injection: RCE for the Modern Web App</li>
+		<li>OWASP AppSec EU 2014 - ActiveScan++: Augmenting manual testing with attack proxy plugins</li>
+	</ul>
+</div>
 </div>
 <br/>
 <div id="middle">
